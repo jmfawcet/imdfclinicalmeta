@@ -1,11 +1,14 @@
 # NOTE: These scripts operate only on the data reported in-text; to
 # calculate similar models using over DVs (e.g., symptom relevant
 # items), swap the DVs listed in each function call to the
-# appropriate dv
+# appropriate dv... if you have any questions, please
+# reach out to the corresponding author.
 
 # Load functions and data
 source('scripts/0.0 Functions and Libraries.R')
-saveRDS(dat, 'data/coded_data.rds')
+
+# Load data
+dat = readRDS('data/coded_data.rds')
 
 # Priors ------------------------------------------------------------------
 
